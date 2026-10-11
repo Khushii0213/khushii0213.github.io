@@ -1,0 +1,34 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Khushboo — Robotics & AI Engineer in the Making</title>
+<meta name="description" content="Portfolio of Khushboo, final-year B.E. Robotics & AI student: ROS 2, computer vision and intelligent systems.">
+<link rel="canonical" href="https://khushii0213.github.io/"><meta property="og:title" content="Khushboo — Robotics & AI Engineer in the Making"><meta property="og:description" content="Intelligent systems connecting perception, software and the physical world."><meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23171C1B'/%3E%3Cpath d='M8 7v18M8 16l10-9M8 16l11 9' stroke='%23F2EFE7' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css"></head><body>
+<a class="skip" href="#work">Skip to projects</a>
+<header class="nav"><a class="mono" href="#top" aria-label="Khushboo, home">K<span>/</span>RA</a>
+<nav aria-label="Primary"><a href="#about">About</a><a href="#work">Projects</a><a href="#skills">Skills</a><a href="#lead">Leadership</a><a href="#contact">Contact</a>
+<button type="button" id="kbtn" class="ghost mono" aria-label="Open command palette">⌘K</button><a class="btn" id="resume1" href="#" download>Resume</a></nav></header>
+<main id="top">
+<section class="hero"><div><p class="mono tag">B.E. Robotics &amp; AI · Thapar Institute · 2027</p>
+<h1>Robotics &amp; AI engineer <em>in the making.</em></h1>
+<p class="lead">I build intelligent systems that connect perception, software and the physical world — from ROS 2 simulation to computer vision and data tooling.</p>
+<p><a class="btn" href="#work">Explore projects</a> <a class="btn alt" href="#contact">Contact</a></p></div>
+<figure class="sim" aria-labelledby="simcap"><canvas id="cv" width="640" height="400" role="img" aria-label="Top-down differential-drive robot simulation with trail"></canvas>
+<figcaption id="simcap" class="mono">Interactive simulation — not a real robot or live ROS 2 data</figcaption>
+<div class="ctl"><label>v linear <output id="ov"></output><input id="sv" type="range" min="-1" max="2" step="0.05" value="0.8"></label>
+<label>ω angular <output id="ow"></output><input id="sw" type="range" min="-2" max="2" step="0.05" value="0.6"></label>
+<label>speed ×<output id="ok"></output><input id="sk" type="range" min="1" max="4" step="1" value="1"></label>
+<div class="row"><button type="button" id="play" class="btn alt">Pause</button><button type="button" id="reset" class="btn alt">Reset</button></div></div>
+<pre class="mono tel" id="tel" aria-live="off"></pre></figure></section>
+<section id="about" class="wrap narrow"><h2><span class="mono">01</span> About</h2>
+<p>I'm a final-year B.E. student in Robotics &amp; AI at Thapar Institute. I like problems where a model or algorithm has to survive contact with sensors, noise and constraints: simulating a delivery robot in Gazebo, hardening a lane detector, or making a classifier explain itself. I'm looking for internships and entry-level roles in robotics, AI/ML and software engineering.</p></section>
+<section id="work" class="wrap"><h2><span class="mono">02</span> Selected work</h2>
+<div class="bar"><div id="filters" role="group" aria-label="Filter by category"></div><label class="sr" for="search">Search projects</label><input id="search" type="search" placeholder="Search name, tech, capability…"><span id="count" class="mono"></span></div>
+<ol id="plist" class="plist"></ol><p id="none" class="mono" hidden>No verified project matches that yet.</p></section>
+<section id="skills" class="wrap"><h2><span class="mono">03</span> Technical map</h2><p class="mono sub">Select a technology to find the projects that use it. No proficiency scores — only evidence.</p><div id="skillmap" class="smap"></div></section>
+<section id="lead" class="wrap narrow"><h2><span class="mono">04</span> Education &amp; leadership</h2><ul id="leadlist" class="lead2"><li><b>B.E., Robotics &amp; Artificial Intelligence</b><span>Thapar Institute of Engineering &amp; Technology · 2027</span></li></ul></section>
+<section id="contact" class="wrap narrow ink"><h2><span class="mono">05</span> Contact</h2><p class="lead">Open to internships and entry-level roles in robotics, AI/ML and software.</p>
+<p><a class="btn inv" id="mail" href="#">Email</a> <button type="button" class="btn inv" id="copy">Copy email</button> <a class="btn inv" id="li" href="#" rel="noopener">LinkedIn</a> <a class="btn inv" id="gh" href="#" rel="noopener">GitHub</a> <a class="btn inv" id="resume2" href="#" download>Resume</a></p><p class="mono" id="msg" role="status"></p></section>
+</main>
+<dialog id="pal" aria-label="Command palette"><input id="pq" type="text" placeholder="Type a command…" aria-label="Search commands" autocomplete="off"><ul id="pl" role="listbox"></ul><p class="mono">↑↓ navigate · Enter run · Esc close</p></dialog>
+<script src="data.js"></script><script src="app.js"></script></body></html>
